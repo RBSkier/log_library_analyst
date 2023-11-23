@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "benchmark",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "/Users/jimmyliu/CPP_Project/Log_Analysist_Tool/benchmark.cpp",
+            "MIMode": "lldb"
+        },
+        {
+            "name": "spd_bench",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "enter program name, for example ${workspaceFolder}/a.out",
+            "MIMode": "lldb"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "spd_async_bench",
+            "program": "/Users/jimmyliu/CPP_Project/Log_Analysist_Tool/include/spdlog/bench/async_bench",
+            "args": ["250000"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

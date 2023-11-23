@@ -1,0 +1,3 @@
+/Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build/CMakeFiles/myapp.dir
+/Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build/CMakeFiles/edit_cache.dir
+/Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build/CMakeFiles/rebuild_cache.dir
