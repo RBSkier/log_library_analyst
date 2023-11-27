@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jimmyliu/CPP_Project/Log_Analysist_Tool
+CMAKE_SOURCE_DIR = /Users/jimmyliu/VSCodeProjects/log_analysist_tool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build
+CMAKE_BINARY_DIR = /Users/jimmyliu/VSCodeProjects/log_analysist_tool/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/myapp.dir/depend.make
@@ -69,33 +69,41 @@ include CMakeFiles/myapp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/myapp.dir/flags.make
 
-CMakeFiles/myapp.dir/test.cpp.o: CMakeFiles/myapp.dir/flags.make
-CMakeFiles/myapp.dir/test.cpp.o: /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/test.cpp
-CMakeFiles/myapp.dir/test.cpp.o: CMakeFiles/myapp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/myapp.dir/test.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myapp.dir/test.cpp.o -MF CMakeFiles/myapp.dir/test.cpp.o.d -o CMakeFiles/myapp.dir/test.cpp.o -c /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/test.cpp
+CMakeFiles/myapp.dir/benchmark.cpp.o: CMakeFiles/myapp.dir/flags.make
+CMakeFiles/myapp.dir/benchmark.cpp.o: /Users/jimmyliu/VSCodeProjects/log_analysist_tool/benchmark.cpp
+CMakeFiles/myapp.dir/benchmark.cpp.o: CMakeFiles/myapp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jimmyliu/VSCodeProjects/log_analysist_tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/myapp.dir/benchmark.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myapp.dir/benchmark.cpp.o -MF CMakeFiles/myapp.dir/benchmark.cpp.o.d -o CMakeFiles/myapp.dir/benchmark.cpp.o -c /Users/jimmyliu/VSCodeProjects/log_analysist_tool/benchmark.cpp
 
-CMakeFiles/myapp.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myapp.dir/test.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/test.cpp > CMakeFiles/myapp.dir/test.cpp.i
+CMakeFiles/myapp.dir/benchmark.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myapp.dir/benchmark.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jimmyliu/VSCodeProjects/log_analysist_tool/benchmark.cpp > CMakeFiles/myapp.dir/benchmark.cpp.i
 
-CMakeFiles/myapp.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myapp.dir/test.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/test.cpp -o CMakeFiles/myapp.dir/test.cpp.s
+CMakeFiles/myapp.dir/benchmark.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myapp.dir/benchmark.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jimmyliu/VSCodeProjects/log_analysist_tool/benchmark.cpp -o CMakeFiles/myapp.dir/benchmark.cpp.s
 
 # Object files for target myapp
 myapp_OBJECTS = \
-"CMakeFiles/myapp.dir/test.cpp.o"
+"CMakeFiles/myapp.dir/benchmark.cpp.o"
 
 # External object files for target myapp
 myapp_EXTERNAL_OBJECTS =
 
-myapp: CMakeFiles/myapp.dir/test.cpp.o
+myapp: CMakeFiles/myapp.dir/benchmark.cpp.o
 myapp: CMakeFiles/myapp.dir/build.make
 myapp: /usr/local/lib/libglog.0.7.0.dylib
+myapp: /opt/homebrew/lib/libspdlog.1.12.0.dylib
+myapp: /opt/homebrew/lib/libboost_log-mt.dylib
 myapp: /opt/homebrew/lib/libgflags.2.2.2.dylib
+myapp: /opt/homebrew/lib/libfmt.10.1.0.dylib
+myapp: /opt/homebrew/lib/libboost_chrono-mt.dylib
+myapp: /opt/homebrew/lib/libboost_filesystem-mt.dylib
+myapp: /opt/homebrew/lib/libboost_atomic-mt.dylib
+myapp: /opt/homebrew/lib/libboost_regex-mt.dylib
+myapp: /opt/homebrew/lib/libboost_thread-mt.dylib
 myapp: CMakeFiles/myapp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable myapp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jimmyliu/VSCodeProjects/log_analysist_tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable myapp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myapp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -107,6 +115,6 @@ CMakeFiles/myapp.dir/clean:
 .PHONY : CMakeFiles/myapp.dir/clean
 
 CMakeFiles/myapp.dir/depend:
-	cd /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jimmyliu/CPP_Project/Log_Analysist_Tool /Users/jimmyliu/CPP_Project/Log_Analysist_Tool /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build/CMakeFiles/myapp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/jimmyliu/VSCodeProjects/log_analysist_tool/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jimmyliu/VSCodeProjects/log_analysist_tool /Users/jimmyliu/VSCodeProjects/log_analysist_tool /Users/jimmyliu/VSCodeProjects/log_analysist_tool/build /Users/jimmyliu/VSCodeProjects/log_analysist_tool/build /Users/jimmyliu/VSCodeProjects/log_analysist_tool/build/CMakeFiles/myapp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/myapp.dir/depend
 

@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jimmyliu/CPP_Project/Log_Analysist_Tool
+CMAKE_SOURCE_DIR = /Users/jimmyliu/VSCodeProjects/log_analysist_tool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build
+CMAKE_BINARY_DIR = /Users/jimmyliu/VSCodeProjects/log_analysist_tool/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build/CMakeFiles /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimmyliu/VSCodeProjects/log_analysist_tool/build/CMakeFiles /Users/jimmyliu/VSCodeProjects/log_analysist_tool/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimmyliu/CPP_Project/Log_Analysist_Tool/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimmyliu/VSCodeProjects/log_analysist_tool/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,29 @@ myapp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/build
 .PHONY : myapp/fast
 
-test.o: test.cpp.o
-.PHONY : test.o
+benchmark.o: benchmark.cpp.o
+.PHONY : benchmark.o
 
 # target to build an object file
-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/test.cpp.o
-.PHONY : test.cpp.o
+benchmark.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/benchmark.cpp.o
+.PHONY : benchmark.cpp.o
 
-test.i: test.cpp.i
-.PHONY : test.i
+benchmark.i: benchmark.cpp.i
+.PHONY : benchmark.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/test.cpp.i
-.PHONY : test.cpp.i
+benchmark.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/benchmark.cpp.i
+.PHONY : benchmark.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+benchmark.s: benchmark.cpp.s
+.PHONY : benchmark.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/test.cpp.s
-.PHONY : test.cpp.s
+benchmark.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/benchmark.cpp.s
+.PHONY : benchmark.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... myapp"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... benchmark.o"
+	@echo "... benchmark.i"
+	@echo "... benchmark.s"
 .PHONY : help
 
 
