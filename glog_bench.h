@@ -2,9 +2,9 @@
 
 void glog_thread_fun(int howmany) {
     for (int i = 0; i < howmany; i++) {
-        // LOG(INFO) << "Hello logger: msg number x";
-        LOG(INFO) << "Hello logger: msg number " << i;
-        // logger->info("Hello logger: msg number x");
+        LOG(INFO) << "Hello logger: msg number x";
+        // LOG(INFO) << "Hello logger: msg number " << 1.23;
+        // LOG(INFO) << "0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789";
     }
 }
 
@@ -29,7 +29,7 @@ void glog_mt(int howmany, int thread_count) {
 
     auto delta = high_resolution_clock::now() - start;
     auto delta_d = duration_cast<duration<double>>(delta).count();
-    std::cout << "Elapsed: " << delta_d << "secs\t" << int(howmany / delta_d) * 79 / 1024 / 1024 << " MB/sec" << std::endl << std::endl;
+    std::cout << "Elapsed: " << delta_d << "secs\t" << int(howmany / delta_d) * (79+74) / 1024 / 1024 << " MB/sec" << std::endl << std::endl;
 }
 
 void glog_sync_bench(int howmany, int thread_count) {

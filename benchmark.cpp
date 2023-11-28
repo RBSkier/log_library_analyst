@@ -1,7 +1,7 @@
 #include "spdlog_bench.h"
 #include "glog_bench.h"
 #include "boost_sync_bench.h"
-#include "boost_async_bench.h"
+// #include "boost_async_bench.h"
 
 #include <atomic>
 #include <iostream>
@@ -57,13 +57,13 @@ int main(int argc, char *argv[]) {
         std::cout << "Boost Log: Sync Log" << std::endl;
         std::cout << "*********************************" << std::endl;
 
-        boost_sync_test(howmany, thread_count, queue_size);
+        boost_sync_bench(howmany, thread_count, queue_size);
 
         std::cout << "*********************************" << std::endl;
         std::cout << "Boost Log: Async Log" << std::endl;
         std::cout << "*********************************" << std::endl;
 
-        boost_async_test(howmany, thread_count, queue_size);
+        boost_async_bench(howmany, thread_count, queue_size);
     }
     catch (std::exception &ex) {
         std::cerr << "Error: " << ex.what() << std::endl;

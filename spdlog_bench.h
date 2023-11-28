@@ -12,9 +12,9 @@ using namespace utils;
 
 void spdlog_thread_fun(std::shared_ptr<spdlog::logger> logger, int howmany) {
     for (int i = 0; i < howmany; i++) {
-        // logger->info("Hello logger: msg number x");
+        logger->info("Hello logger: msg number x");
 
-        logger->info("Hello logger: msg number {}", i);
+        // logger->info("Hello logger: msg number {}", 1.23);
 
         // double floating_number = 3.14;
         // logger->info("Hello logger: msg number {}", floating_number);
@@ -44,7 +44,7 @@ void spdlog_mt(int howmany, std::shared_ptr<spdlog::logger> logger, int thread_c
 
     auto delta = high_resolution_clock::now() - start;
     auto delta_d = duration_cast<duration<double>>(delta).count();
-    std::cout << "Elapsed: " << delta_d << "secs\t" << int(howmany / delta_d) * 70 / 1024 /1024  << " MB/sec" << std::endl << std::endl;
+    std::cout << "Elapsed: " << delta_d << "secs\t" << int(howmany / delta_d) * (70+74) / 1024 /1024  << " MB/sec" << std::endl << std::endl;
 }
 
 void spdlog_sync_bench(int howmany, int threads) {
