@@ -2,18 +2,16 @@
 #include <spdlog/async.h>
 #include <spdlog/sinks/basic_file_sink.h>
 #include <iostream>
-#include "utils.h"
 
 using namespace std;
 using namespace std::chrono;
 using namespace spdlog;
 using namespace spdlog::sinks;
-using namespace utils;
 
 void spdlog_thread_fun(std::shared_ptr<spdlog::logger> logger, int howmany) {
     for (int i = 0; i < howmany; i++) {
         logger->info("Hello logger: msg number x");
-
+        
         // logger->info("Hello logger: msg number {}", 1.23);
 
         // double floating_number = 3.14;

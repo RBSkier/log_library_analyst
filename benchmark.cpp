@@ -1,7 +1,6 @@
 #include "spdlog_bench.h"
 #include "glog_bench.h"
-#include "boost_sync_bench.h"
-// #include "boost_async_bench.h"
+#include "boost_bench.h"
 
 #include <atomic>
 #include <iostream>

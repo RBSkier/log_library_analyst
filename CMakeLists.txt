@@ -6,4 +6,4 @@ find_package(spdlog REQUIRED)
 find_package(Boost REQUIRED COMPONENTS log)
 
 add_executable (myapp /Users/jimmyliu/VSCodeProjects/log_analysist_tool/benchmark.cpp)
-target_link_libraries (myapp PRIVATE glog::glog spdlog::spdlog ${Boost_LIBRARIES})
+target_link_libraries (myapp PRIVATE spdlog::spdlog glog::glog ${Boost_LIBRARIES})

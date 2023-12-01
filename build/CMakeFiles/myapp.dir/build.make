@@ -92,16 +92,8 @@ myapp_EXTERNAL_OBJECTS =
 
 myapp: CMakeFiles/myapp.dir/benchmark.cpp.o
 myapp: CMakeFiles/myapp.dir/build.make
-myapp: /usr/local/lib/libglog.0.7.0.dylib
 myapp: /opt/homebrew/lib/libspdlog.1.12.0.dylib
-myapp: /opt/homebrew/lib/libboost_log-mt.dylib
-myapp: /opt/homebrew/lib/libgflags.2.2.2.dylib
 myapp: /opt/homebrew/lib/libfmt.10.1.0.dylib
-myapp: /opt/homebrew/lib/libboost_chrono-mt.dylib
-myapp: /opt/homebrew/lib/libboost_filesystem-mt.dylib
-myapp: /opt/homebrew/lib/libboost_atomic-mt.dylib
-myapp: /opt/homebrew/lib/libboost_regex-mt.dylib
-myapp: /opt/homebrew/lib/libboost_thread-mt.dylib
 myapp: CMakeFiles/myapp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jimmyliu/VSCodeProjects/log_analysist_tool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable myapp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myapp.dir/link.txt --verbose=$(VERBOSE)
